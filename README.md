@@ -1,6 +1,6 @@
 # How to set up this project
 
-The Goal of this project was the creation of a website that can display a dataset and log all actions to your database.
+The Goal of this project was the creation of a website that can display a dataset and log all actions to your database. This project uses Bootstrap to beautify the output.
 
 ## Install dependencies
 
@@ -48,6 +48,9 @@ You can change the input by changing the folowing files to your needs
 * Go to your browser and insert in address bar
 
 > http://127.0.0.1:8000/
+
+The final result should look like this: <br>
+![Website final](final_result.png "Website final")
 
 ### How to use the App
 * On navigation you will find 
