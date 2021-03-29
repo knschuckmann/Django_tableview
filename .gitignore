@@ -1,0 +1,6 @@
+*.sqlite3
+recruitment/
+Schuckmann.zip
+data/task_data.csv
+task/
+.spyproject/config/
