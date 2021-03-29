@@ -1,5 +1,7 @@
 # How to set up this project
 
+The Goal of this project was the creation of a website that can display a dataset and log all actions to your database.
+
 ## Install dependencies
 
 *sometimes pip3 and python3 is required instead of pip and python*
@@ -15,9 +17,30 @@
 **Python should be installed**
 
 ### Fill Database
+make sure that your file is called task_data.csv and is located in data folder *data/task\_data.csv*. Your data should have the following headers in given order and written exact as given:
+
+1. id
+2. timestamp
+3. temperature
+4. duration
+
 ```console
 > python manage.py import_csv_to_db
 ```
+You can change the input by changing the folowing files to your needs 
+
+- **webapp/management/commands/import_csv_to_db.py**
+- **webapp/admin.py**
+- **webapp/models.py**
+- **webapp/templates/webapp.html**
+
+
+### Migrate Changes
+```console
+> python manage.py makemigrations
+> python manage.py migrate
+```
+
 ### Start Webserver (localy)
 ```console
 > python manage.py runserver
